@@ -16,6 +16,12 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
     <name>Kezar Runner</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -25,10 +31,4 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <feature name="Geolocation">
-        <param name="ios-package" value="CDVLocation" />
-    </feature>
-    <feature name="Console">
-        <param name="ios-package" value="CDVLogger" />
-    </feature>
 </widget>
