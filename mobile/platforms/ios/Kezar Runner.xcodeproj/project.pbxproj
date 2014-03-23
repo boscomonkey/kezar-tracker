@@ -40,6 +40,7 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		FC6834608F2141F58F5DA7A0 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B06F311A6544E22AFB89274 /* CDVLocation.m */; };
+		5949D8EE53754F6EABC18061 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DDB9A180D44C42A8715197 /* CDVLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Kezar Runner/config.xml"; sourceTree = "<group>"; };
 		4B06F311A6544E22AFB89274 /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		E63243EF17AC4798931B21E4 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		69DDB9A180D44C42A8715197 /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "org.apache.cordova.console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		52F90C03E524462694FFD9D3 /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 			children = (
 				4B06F311A6544E22AFB89274 /* CDVLocation.m */,
 				E63243EF17AC4798931B21E4 /* CDVLocation.h */,
+				69DDB9A180D44C42A8715197 /* CDVLogger.m */,
+				52F90C03E524462694FFD9D3 /* CDVLogger.h */,
 			);
 			name = Plugins;
 			path = "Kezar Runner/Plugins";
@@ -409,6 +414,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				FC6834608F2141F58F5DA7A0 /* CDVLocation.m in Sources */,
+				5949D8EE53754F6EABC18061 /* CDVLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
