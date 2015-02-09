@@ -38,3 +38,16 @@ body {
     color: green;
     line-height: 13px;
 }
+
+.button {
+    width: 48%;
+}
+
+.button:disabled {
+    color: lightgray;
+}
+
+#dataTable {
+    margin-top: 1em;
+    width: 100%;
+}
