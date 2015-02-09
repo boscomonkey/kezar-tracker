@@ -7,22 +7,8 @@ $(document).ready(function() {
                      "MxT903yxgWaPt3cS7MN2Wx7cOGuNYJgVqSsHMcQ7");
 
     var WayPoint = Parse.Object.extend("WayPoint");
-    var deviceId = '74463';
+    var deviceId = String(new Fingerprint({canvas: true}).get());
     var watchId;
-
-    /*
-     *
-    var testObject = new TestObject();
-    testObject.save({foo: "bar"}, {
-        success: function(object) {
-            $(".success").show();
-        },
-        error: function(model, error) {
-            $(".error").show();
-        }
-    });
-     *
-     */
 
     var configButtons = function(running) {
         btnStop.prop('disabled', !running);
@@ -30,8 +16,7 @@ $(document).ready(function() {
     };
 
     btnStart.click(function() {
-        var now = new Date();
-        var activityId = now.getTime();
+        var activityId = String(new Date().getTime());
         var onSuccess = function(position) {
             var wp = new WayPoint();
             var fields = ['accuracy',
