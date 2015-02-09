@@ -39,6 +39,11 @@ body {
     line-height: 13px;
 }
 
+#dataTable {
+    margin-top: 1em;
+    width: 100%;
+}
+
 .button {
     width: 48%;
 }
@@ -47,7 +52,6 @@ body {
     color: lightgray;
 }
 
-#dataTable {
-    margin-top: 1em;
-    width: 100%;
+.dataCell {
+    width: 50%;
 }
