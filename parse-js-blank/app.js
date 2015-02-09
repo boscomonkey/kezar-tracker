@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var btnStart = $('#btnStart');
     var btnStop = $('#btnStop');
+    var sound = new Howl({urls: ['media/elevator.mp3']});
 
     Parse.initialize("lzEHCtBTRGJ8jc08zGwJhxGAt5R0ut0s7Tem5N8f",
                      "MxT903yxgWaPt3cS7MN2Wx7cOGuNYJgVqSsHMcQ7");
@@ -42,6 +43,7 @@ $(document).ready(function() {
                           'speed',
                          ];
 
+            sound.play();
             console.log('watchPosition', position);
 
             for (var ii in fields) {
