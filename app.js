@@ -43,7 +43,16 @@ $(document).ready(function() {
                     deviceId: deviceId,
                     activityId: activityId,
                     timestamp: position.timestamp,
-                    coords: position.coords,
+
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+
+                    speed: position.coords.speed,
+                    heading: position.coords.heading,
+                    accuracy: position.coords.accuracy,
+
+                    altitude: position.coords.altitude,
+                    altitudeAccuracy: position.coords.altitudeAccuracy,
                 },
                 {
                     error: function(model, error) {
