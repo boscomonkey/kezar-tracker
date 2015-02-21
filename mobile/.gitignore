@@ -1,0 +1,5 @@
+# ignoring build artifacts
+platforms/android/CordovaLib/ant-build/
+platforms/android/ant-build/
+platforms/android/assets/
+platforms/ios/www/
