@@ -29,7 +29,7 @@ $(document).ready(function() {
                          ];
 
             sound.play();
-            console.log('watchPosition', position);
+            console.log('watchPosition:', JSON.stringify(position));
 
             for (var ii in fields) {
                 var field = fields[ii];
@@ -38,11 +38,16 @@ $(document).ready(function() {
 
                 elt.textContent = data;
             };
+
+            // IOS webview's timestamp is a Date object - triggers
+            // storage type conflict error when we're trying to
+            // persist an integral millisecond value
+            var msTimeStamp = position.timestamp.valueOf();
             wp.save(
                 {
                     deviceId: deviceId,
                     activityId: activityId,
-                    timestamp: position.timestamp,
+                    timestamp: msTimeStamp,
 
                     latitude: position.coords.latitude,
                     longitude: position.coords.longitude,
@@ -56,7 +61,12 @@ $(document).ready(function() {
                 },
                 {
                     error: function(model, error) {
-                        console.log('Parse save error', model, error);
+                        console.log(
+                            'Parse error model:', JSON.stringify(model)
+                        );
+                        console.log(
+                            'Parse error message:', JSON.stringify(error)
+                        );
                     }
                 }
             );
