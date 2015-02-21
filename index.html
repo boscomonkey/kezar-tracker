@@ -1,0 +1,43 @@
+<!doctype html><!-- -*-html-*- -->
+<html>
+  <head>
+    <title>Kezar Tracker Web App</title>
+    <meta name="description" content="GSP running app that displays instantaneous speed; plus lap time, distance, and average speed. Designed for the style of running workouts practiced by the San Francisco Triathlon Club (at Kezar Track, Golden Gate Park) composed of non-stop laps of different length, speed, and duration.">
+    <style>
+      body {
+      font-family: sans-serif;
+      font-size: smaller;
+      }
+      #startContainer {
+      text-align: center;
+      }
+      #startButton {
+      font-size: 200%;
+      padding: 0.25em 0;
+      width: 62%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Kezar Tracker Web App</h1>
+
+    <p>GPS running app that displays instantaneous speed; plus lap time, distance, and average speed. Designed for the style of running workouts practiced by the <a href="http://sftriclub.org/">San Francisco Triathlon Club</a> (at <a href="http://bit.ly/1GeLEzy">Kezar Track, Golden Gate Park</a>) composed of non-stop laps of different length, speed, and duration.</p>
+
+    <p>Currently available mobile apps such as Strava and Runkeeper suffer from some major problems for SF Tri style of track practice:</p>
+
+    <ol>
+      <li>They average out speed over the duration of the whole workout. Whereas we need instantaneous speed.</li>
+      <li>They do not offer a lap timer. Whereas we need to run very specific lap durations.</li>
+    </ol>
+
+    <p>Thus, I often have to use both a running app and a stopwatch app to follow my workout. The goal of this <a href="https://github.com/boscomonkey/kezar-tracker">Kezar Tracker Web App</a> is to provide a super simple running tracker for the SF Tri style of track workouts.</p>
+
+    <p id="startContainer">
+      <a href="mobile/www/app.html">
+        <button id="startButton">Start</button>
+      </a>
+    </p>
+
+  </body>
+</html>
