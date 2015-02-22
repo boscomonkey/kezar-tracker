@@ -32,8 +32,9 @@ $(document).ready(function() {
             elt.textContent = 'App has started!';
             $('body').append($(elt));
         };
+        var media = new Media('/android_asset/www/media/elevator.mp3');
         var alertPing = function() {
-            $('body').fadeOut().fadeIn();
+            media.play();
         };
         var blinkBackground = function() {
             var body = $('body');
