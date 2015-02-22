@@ -7,6 +7,10 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <title>Kezar Tracker</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+
         <style>
           body {
           font-family: Verdana, Helvetica, sans-serif;
@@ -17,7 +21,40 @@
     <body>
       <h1>Kezar Tracker</h1>
 
-      <p class="status">Connecting to GPS</p>
+      <p class="status">Initializing...</p>
+
+      <div id="coord">
+        <table border="1" id="dataTable">
+          <tr>
+            <td>latitude</td>
+            <td id="latitude" class="dataCell"></td>
+          </tr>
+          <tr>
+            <td>longitude</td>
+            <td id="longitude" class="dataCell"></td>
+          </tr>
+          <tr>
+            <td>speed</td>
+            <td id="speed" class="dataCell"></td>
+          </tr>
+          <tr>
+            <td>heading</td>
+            <td id="heading" class="dataCell"></td>
+          </tr>
+          <tr>
+            <td>accuracy</td>
+            <td id="accuracy" class="dataCell"></td>
+          </tr>
+          <tr>
+            <td>altitude</td>
+            <td id="altitude" class="dataCell"></td>
+          </tr>
+          <tr>
+            <td>altitudeAccuracy</td>
+            <td id="altitudeAccuracy" class="dataCell"></td>
+          </tr>
+        </table>
+      </div>
 
       <ol class="errors"></ol>
     </body>
